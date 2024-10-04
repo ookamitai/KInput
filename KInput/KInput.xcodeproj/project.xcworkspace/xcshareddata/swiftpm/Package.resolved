@@ -1,0 +1,24 @@
+{
+  "originHash" : "9a22c1227073af2ae29cfd127801bf7b364b4faadaffc825813528809a4a4a40",
+  "pins" : [
+    {
+      "identity" : "hotkey",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/soffes/HotKey",
+      "state" : {
+        "branch" : "main",
+        "revision" : "4d02d80de143d69b7eeb5962729591a157a57ede"
+      }
+    },
+    {
+      "identity" : "swiftautogui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/NakaokaRei/SwiftAutoGUI",
+      "state" : {
+        "revision" : "9efe9fc805abfcf27786128958abbe7d53335284",
+        "version" : "0.3.1"
+      }
+    }
+  ],
+  "version" : 3
+}

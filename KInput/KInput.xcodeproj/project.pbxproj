@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FB7CBE192CAFA1A6008EBA60 /* SwiftAutoGUI in Frameworks */ = {isa = PBXBuildFile; productRef = FB7CBE182CAFA1A6008EBA60 /* SwiftAutoGUI */; };
+		FB7CBE1C2CAFA29F008EBA60 /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = FB7CBE1B2CAFA29F008EBA60 /* HotKey */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		FB7CBE052CAFA100008EBA60 /* KInput.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KInput.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB7CBE1C2CAFA29F008EBA60 /* HotKey in Frameworks */,
+				FB7CBE192CAFA1A6008EBA60 /* SwiftAutoGUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +72,8 @@
 			);
 			name = KInput;
 			packageProductDependencies = (
+				FB7CBE182CAFA1A6008EBA60 /* SwiftAutoGUI */,
+				FB7CBE1B2CAFA29F008EBA60 /* HotKey */,
 			);
 			productName = KInput;
 			productReference = FB7CBE052CAFA100008EBA60 /* KInput.app */;
@@ -94,6 +103,10 @@
 			);
 			mainGroup = FB7CBDFC2CAFA100008EBA60;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FB7CBE172CAFA1A6008EBA60 /* XCRemoteSwiftPackageReference "SwiftAutoGUI" */,
+				FB7CBE1A2CAFA29F008EBA60 /* XCRemoteSwiftPackageReference "HotKey" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FB7CBE062CAFA100008EBA60 /* Products */;
 			projectDirPath = "";
@@ -339,6 +352,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FB7CBE172CAFA1A6008EBA60 /* XCRemoteSwiftPackageReference "SwiftAutoGUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/NakaokaRei/SwiftAutoGUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.1;
+			};
+		};
+		FB7CBE1A2CAFA29F008EBA60 /* XCRemoteSwiftPackageReference "HotKey" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/soffes/HotKey";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB7CBE182CAFA1A6008EBA60 /* SwiftAutoGUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB7CBE172CAFA1A6008EBA60 /* XCRemoteSwiftPackageReference "SwiftAutoGUI" */;
+			productName = SwiftAutoGUI;
+		};
+		FB7CBE1B2CAFA29F008EBA60 /* HotKey */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB7CBE1A2CAFA29F008EBA60 /* XCRemoteSwiftPackageReference "HotKey" */;
+			productName = HotKey;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FB7CBDFD2CAFA100008EBA60 /* Project object */;
 }
